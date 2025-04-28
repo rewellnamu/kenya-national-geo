@@ -1,0 +1,21 @@
+<nav class="navbar">
+    <div class="container">
+      <a class="logo" routerLink="/">KenyaNationalGeo</a>
+  
+      <div class="menu-icon" (click)="toggleMenu()">
+        <div [class.change]="menuOpen"></div>
+        <div [class.change]="menuOpen"></div>
+        <div [class.change]="menuOpen"></div>
+      </div>
+  
+      <ul class="nav-links" [class.open]="menuOpen">
+        <li><a routerLink="/" routerLinkActive="active"  (click)="closeMenu()">Home</a></li>
+        <li><a routerLink="/parks" routerLinkActive="active" (click)="closeMenu()">Parks</a></li>
+        <li><a routerLink="/wildlife" routerLinkActive="active" (click)="closeMenu()">Wildlife</a></li>
+        <li><a routerLink="/booking" routerLinkActive="active" (click)="closeMenu()">Booking</a></li>
+        <li><a routerLink="/about" routerLinkActive="active" (click)="closeMenu()">About</a></li>
+        <li><a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  
