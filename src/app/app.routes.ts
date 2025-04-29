@@ -6,11 +6,13 @@ import { WildlifeComponent } from './pages/wildlife/wildlife.component';
 import { BookingComponent } from './pages/booking/booking.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { AnimalDetailsComponent} from './pages/animal-details/animal-details.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'parks', component: ParksComponent },
   { path: 'parks/:id', component: ParkDetailsComponent },
+  { path: 'wildlife/:id', component: AnimalDetailsComponent },
   { path: 'wildlife', component: WildlifeComponent },
   { path: 'booking', component: BookingComponent },
   { path: 'about', component: AboutComponent },

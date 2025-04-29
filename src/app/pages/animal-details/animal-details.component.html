@@ -1,0 +1,11 @@
+<section class="animal-detail" *ngIf="animal">
+    <img [src]="animal.imageUrl" [alt]="animal.name" />
+    <div class="info">
+      <h2>{{ animal.name }}</h2>
+      <p>{{ animal.description }}</p>
+      <h4>Fun Fact:</h4>
+      <p>{{ animal.facts }}</p>
+      <a routerLink="/wildlife" class="back-link">← Back to Wildlife</a>
+    </div>
+  </section>
+  

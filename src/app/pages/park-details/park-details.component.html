@@ -1,1 +1,11 @@
-<p>park-details works!</p>
+<section class="park-detail" *ngIf="park">
+  <img [src]="park.imageUrl" [alt]="park.name" />
+  <div class="info">
+    <h2>{{ park.name }}</h2>
+    <p><strong>Location:</strong> {{ park.location }}</p>
+    <p>{{ park.description }}</p>
+    <h4>Highlights:</h4>
+    <p>{{ park.highlights }}</p>
+    <a routerLink="/parks" class="back-link">← Back to Parks</a>
+  </div>
+</section>
