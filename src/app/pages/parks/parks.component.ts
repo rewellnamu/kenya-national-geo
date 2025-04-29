@@ -14,61 +14,61 @@ export class ParksComponent {
       id: 1,
       name: 'Maasai Mara',
       description: 'Famous for the Great Migration and Big Cats.',
-      imageUrl: 'https://images.unsplash.com/photo-1605009181540-0ec9b45aef80?auto=format&fit=crop&w=800&q=80'
+      imageUrl: 'parks/mara.jpg'
     },
     {
       id: 2,
       name: 'Amboseli National Park',
       description: 'Known for large elephant herds and views of Mt. Kilimanjaro.',
-      imageUrl: 'https://images.unsplash.com/photo-1582571591886-cf62fbbe8c05?auto=format&fit=crop&w=800&q=80'
+      imageUrl: 'parks/amboseli.jpg'
     },
     {
       id: 3,
       name: 'Tsavo National Park',
       description: 'One of the largest parks in Kenya, home to diverse wildlife.',
-      imageUrl: 'https://images.unsplash.com/photo-1610173827042-09e8e33d7e6e?auto=format&fit=crop&w=800&q=80'
+      imageUrl: 'parks/Tsavo.jpg'
     },
     {
       id: 4,
       name: 'Lake Nakuru National Park',
       description: 'Famous for its flamingos and rhinos.',
-      imageUrl: 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=800&q=80'
+      imageUrl: 'parks/lake nakuru.jpg'
     },
     {
       id: 5,
       name: 'Samburu National Reserve',
       description: 'Known for unique wildlife species and stunning landscapes.',
-      imageUrl: 'https://images.unsplash.com/photo-1560807707-8cc77767d783?auto=format&fit=crop&w=800&q=80'
+      imageUrl: 'parks/samburu.jpg'
     },
     {
       id: 6,
       name: 'Nairobi National Park',
       description: 'Unique park located just outside Nairobi, home to diverse wildlife.',
-      imageUrl: 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=800&q=80'
+      imageUrl: 'parks/Nairobi.jpg'
     },
     {
       id: 7,
       name: 'Aberdare National Park',
       description: 'Known for its stunning landscapes and diverse wildlife.',
-      imageUrl: 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=800&q=80'
+      imageUrl: 'parks/aberdare.jpg'
     },
     {
       id: 8,
       name: 'Meru National Park',
       description: 'Less crowded park known for its diverse wildlife and landscapes.',
-      imageUrl: 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=800&q=80'
+      imageUrl: 'parks/meru.jpg'
     },
     {
       id: 9,
-      name: 'Kakamega Forest National Reserve',
+      name: 'watamu marine park',
       description: 'Home to unique flora and fauna, including rare species.',
-      imageUrl: 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=800&q=80'
+      imageUrl: 'parks/watamu.jpg'
     },
     {
       id: 10,
       name: 'Mount Kenya National Park',
       description: 'Home to Africa\'s second highest peak and diverse ecosystems.',
-      imageUrl: 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=800&q=80'
+      imageUrl: 'parks/mtkenya.jpg'
     },
     {
       id: 11,
