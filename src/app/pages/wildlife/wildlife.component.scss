@@ -1,72 +1,39 @@
-.wildlife {
-    padding: 4rem 2rem;
-    background-color: #fff8e1;
+.wildlife-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+
+  .animal-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
     text-align: center;
+    padding: 1rem;
 
-    h2 {
-      font-size: 2.5rem;
-      margin-bottom: 2rem;
-      color: #006400;
+    &:hover {
+      transform: translateY(-5px);
     }
 
-    .wildlife-grid {
-        display: flex;
-        overflow-x: auto;
-        gap: 2rem;
-        padding: 1rem;
-        scroll-snap-type: x mandatory;
-
-        .wildlife-card {
-            flex: 0 0 auto;
-            scroll-snap-align: start;
-        }
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 0.5rem;
+      margin-bottom: 1rem;
     }
 
-    .wildlife-card {
-      background: #ffffff;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
+    h3 {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+      color: #333;
+    }
 
-      &:hover {
-        transform: translateY(-5px);
-      }
-
-      img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-      }
-
-      .card-content {
-        padding: 1rem;
-
-        h3 {
-          color: #006400;
-          margin-bottom: 0.5rem;
-        }
-
-        p {
-          font-size: 0.95rem;
-          color: #555;
-          margin-bottom: 1rem;
-        }
-
-        .btn {
-          display: inline-block;
-          padding: 0.5rem 1.5rem;
-          background-color: #FFD700;
-          color: #006400;
-          font-weight: bold;
-          border-radius: 25px;
-          text-decoration: none;
-          transition: background-color 0.3s ease;
-
-          &:hover {
-            background-color: #e6c200;
-          }
-        }
-      }
+    p {
+      margin: 0;
+      color: #555;
     }
   }
+}

@@ -1,4 +1,4 @@
-<section class="wildlife">
+<!-- <section class="wildlife">
     <h2>Meet Kenya's Majestic Wildlife</h2>
   
     <div class="wildlife-grid">
@@ -12,4 +12,12 @@
       </div>
     </div>
   </section>
+   -->
+   <div class="animals-container">
+    <div class="animal-card" *ngFor="let animal of animals">
+      <img [src]="animal.imageUrl" alt="{{ animal.name }}" />
+      <h3>{{ animal.name }}</h3>
+      <p>Species: {{ animal.species }}</p>
+    </div>
+  </div>
   
