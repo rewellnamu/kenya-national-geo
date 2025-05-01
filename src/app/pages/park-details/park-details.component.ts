@@ -88,7 +88,7 @@ export class ParkDetailsComponent implements OnInit {
         id: 9,
         name: 'Ol Pejeta Conservancy',
         location: 'Laikipia County',
-        imageUrl: 'parks/ol.jpg',
+        imageUrl: 'parks/ol.webp',
         description: 'Home to the last two northern white rhinos.',
         highlights: 'Conservation, wildlife, safaris'
       },
