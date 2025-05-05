@@ -1,25 +1,10 @@
-<!-- <section class="parks">
-    <h2>Explore National Parks</h2>
-  
-    <div class="parks-grid">
-      <div class="park-card" *ngFor="let park of parks">
-        <img [src]="park.imageUrl" [alt]="park.name" />
-        <div class="card-content">
-          <h3>{{ park.name }}</h3>
-          <p>{{ park.description }}</p>
-          <a routerLink="/parks/{{ park.id }}" class="btn">Learn More</a>
-        </div>
-      </div>
-    </div>
-  </section>
-   -->
-   <div class="parks-grid">
-    <div class="park-card" *ngFor="let park of parks">
-      <img [src]="park.imageUrl" [alt]="park.name" />
-      <h2>{{ park.name }}</h2>
-      <p>{{ park.location }}</p>
-      <p>{{ park.description }}</p>
-      <a routerLink="/parks/{{ park.id }}" class="btn">Learn More</a>
-    </div>
+<h1 class="parks-title">Explore National Parks</h1>
+<div class="parks-grid">
+  <div class="park-card" *ngFor="let park of parks">
+    <img [src]="park.imageUrl" [alt]="park.name" />
+    <h2>{{ park.name }}</h2>
+    <p>{{ park.location }}</p>
+    <p>{{ park.description }}</p>
+    <a routerLink="/parks/{{ park.id }}" class="btn">Learn More</a>
   </div>
-  
+</div>
