@@ -1,44 +1,30 @@
-<section class="booking-container">
-    <h2>Book Your Adventure</h2>
+<div class="booking-form" style="background-image: url('kws/lion.jpg'); background-size: cover;">
+  <h2>Book a Visit</h2>
   
-    <form class="booking-form">
-      <div class="form-group">
-        <label for="fullName">Full Name</label>
-        <input id="fullName" type="text" placeholder="John Doe" required />
-      </div>
-  
-      <div class="form-group">
-        <label for="email">Email Address</label>
-        <input id="email" type="email" placeholder="john@example.com" required />
-      </div>
-  
-      <div class="form-group">
-        <label for="park">Select Park</label>
-        <select id="park" required>
-          <option value="">-- Choose a Park --</option>
-          <option value="maasai-mara">Maasai Mara</option>
-          <option value="tsavo">Tsavo National Park</option>
-          <option value="amboseli">Amboseli National Park</option>
-            <option value="lake-nakuru">Lake Nakuru National Park</option>
-            <option value="samburu">Samburu National Reserve</option>
-            <option value="nairobi">Nairobi National Park</option>
-            <option value="meru">Meru National Park</option>
-            
-          <!-- You can dynamically populate this list with backend data -->
-        </select>
-      </div>
-  
-      <div class="form-group">
-        <label for="date">Visit Date</label>
-        <input id="date" type="date" required />
-      </div>
-  
-      <div class="form-group">
-        <label for="guests">Number of Guests</label>
-        <input id="guests" type="number" min="1" max="10" value="1" required />
-      </div>
-  
-      <button type="submit" class="submit-btn">Book Now</button>
-    </form>
-  </section>
-  
+  <form (ngSubmit)="submitBooking()">
+    <label>
+      Name:
+      <input type="text" [(ngModel)]="booking.name" name="name" required>
+    </label>
+
+    <label>
+      Email:
+      <input type="email" [(ngModel)]="booking.email" name="email" required>
+    </label>
+
+    <label>
+      Park ID:
+      <input type="number" [(ngModel)]="booking.park_id" name="park_id" required min="1">
+    </label>
+
+    <label>
+      Date of Visit:
+      <input type="date" [(ngModel)]="booking.date" name="date" required>
+    </label>
+
+    <button type="submit">Submit Booking</button>
+  </form>
+
+  <p class="success" *ngIf="successMessage">{{ successMessage }}</p>
+  <p class="error" *ngIf="errorMessage">{{ errorMessage }}</p>
+</div>

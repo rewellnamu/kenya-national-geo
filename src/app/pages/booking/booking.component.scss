@@ -1,75 +1,54 @@
-.booking-container {
-    max-width: 600px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background: #fdfdfd;
-    border-radius: 1rem;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    font-family: 'Inter', sans-serif;
-  
-    h2 {
-      text-align: center;
-      margin-bottom: 1.5rem;
-      font-size: 2rem;
-      color: #2e4e4e;
-    }
-  
-    .booking-form {
-      display: flex;
-      flex-direction: column;
-      gap: 1.25rem;
-  
-      .form-group {
-        display: flex;
-        flex-direction: column;
-  
-        label {
-          margin-bottom: 0.5rem;
-          font-weight: 600;
-          color: #333;
-        }
-  
-        input,
-        select {
-          padding: 0.75rem 1rem;
-          border: 1px solid #ccc;
-          border-radius: 0.5rem;
-          font-size: 1rem;
-          transition: border-color 0.3s ease;
-  
-          &:focus {
-            border-color: #007b5e;
-            outline: none;
-          }
-        }
-      }
-  
-      .submit-btn {
-        padding: 0.75rem 1rem;
-        font-size: 1.1rem;
-        background-color: #007b5e;
-        color: white;
-        border: none;
-        border-radius: 0.5rem;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-  
-        &:hover {
-          background-color: #005f47;
-        }
-      }
+.booking-form {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 20px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 500;
+
+    input {
+      width: 350px;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-top: 0.25rem;
     }
   }
-  
-  @media (max-width: 480px) {
-    .booking-container {
-      padding: 1rem;
-    }
-  
-    .booking-form {
-      .submit-btn {
-        font-size: 1rem;
-      }
+
+  button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #27ae60;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background-color: #219150;
     }
   }
-  
+
+  .success {
+    color: green;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .error {
+    color: red;
+    margin-top: 1rem;
+    text-align: center;
+  }
+}
