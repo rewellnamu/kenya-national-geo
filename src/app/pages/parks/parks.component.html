@@ -1,10 +1,12 @@
 <h1 class="parks-title">Explore National Parks</h1>
 <div class="parks-grid">
-  <div class="park-card" *ngFor="let park of parks">
-    <img [src]="park.imageUrl" [alt]="park.name" />
+  <div class="park-card" style="background-image:url('kws/.jpg')" *ngFor="let park of parks">
+    
     <h2>{{ park.name }}</h2>
     <p>{{ park.location }}</p>
     <p>{{ park.description }}</p>
     <a routerLink="/parks/{{ park.id }}" class="btn">Learn More</a>
+    <a [routerLink]="['/booking']" [queryParams]="{ parkId: park.id }" class="btn">Book Visit</a>
+    
   </div>
 </div>
